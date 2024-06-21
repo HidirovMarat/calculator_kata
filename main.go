@@ -49,6 +49,9 @@ func main() {
 }
 
 func computationt(num1Arab, num2Arab int, oper string) (result int) {
+	if num1Arab < 1 || num2Arab < 1 || num1Arab > 10 || num2Arab > 10 {
+		panic("number outside normal")
+	}
 
 	switch oper {
 	case "-":
